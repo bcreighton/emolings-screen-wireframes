@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    min-width: fit-content;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 20px 0 50px;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin: 20px 0 30px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+
+nav, footer {
+    width: 100%;
+    padding: 20px;
+    background-color: gray;
+}
+
+nav {
+    position: fixed;
+}
+
+hr {
+    background-color: white;
+}
+
+.tempNav p {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.tempNav li {
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 1.15rem;
+}
+
+.tempNav li a {
+    text-decoration: none;
+}
+
+.tempNav li a, .tempNav li a:hover, .tempNav li a:active, .tempNav li a:visited {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 125px;
+}
+
+main.index {
+    padding-top:0;
+}
+
+section:nth-child(odd) {
+    background-color: lightgray;
+}
+
+section:nth-child(even) {
+    background-color: darkgray;
+}
+
+main.index section:nth-of-type(1) {
+    padding-top: 150px;
+}
+
+section {
+    margin: 0 auto;
+    flex: 1 1 200px;
+    width: 100%;
+    padding: 100px;
+}
+
+div {
+    margin: 10px auto;
+    width: 90%;
+    vertical-align: middle;
+}
+
+form {
+    width: 40%;
+    margin: 20px auto;
+}
+
+input, label {
+    display: block;
+    margin: 10px auto;
+}
